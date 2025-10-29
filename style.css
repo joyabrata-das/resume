@@ -1,0 +1,146 @@
+/* -------------------------------
+   Joyabrata Das Resume Stylesheet
+--------------------------------- */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- HEADER ---------- */
+header {
+  text-align: center;
+}
+
+.profile {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077b6;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #0077b6;
+  margin: 0;
+}
+
+h2 {
+  color: #0077b6;
+  border-bottom: 2px solid #0077b6;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 1px solid #0077b6;
+  margin: 20px 0;
+}
+
+/* ---------- LOGO & TEXT ALIGNMENT ---------- */
+.edu,
+.job {
+  display: flex;
+  align-items: center; /* Align vertically centered */
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.edu img,
+.job img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Make sure logos align beside institution/company names */
+.edu div,
+.job div {
+  flex: 1;
+}
+
+.job h3 span {
+  float: right;
+  font-style: italic;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* ---------- CERTIFICATIONS ---------- */
+.certs li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.mini-logo {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* ---------- GENERAL STYLES ---------- */
+ul {
+  margin: 10px 0 20px 25px;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+p {
+  margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .edu,
+  .job {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu img,
+  .job img {
+    margin-bottom: 8px;
+  }
+
+  .job h3 span {
+    float: none;
+    display: block;
+    margin-top: 5px;
+  }
+}
